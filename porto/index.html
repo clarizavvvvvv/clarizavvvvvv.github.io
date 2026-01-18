@@ -11,9 +11,8 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
-    <!-- My CSS -->
-
-    <title>My Portfolio Barby clariza</b></title>
+    <!-- Title fix: Removed the stray </b> -->
+    <title>My Portfolio Barby clariza</title>
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -36,10 +35,13 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
-               <!-- Tambahan menu untuk menghubungkan ke Portofolio 2 -->
-  <li class="nav-item">
-    <a class="nav-link" href="index2.html" target="_blank">
-      Portofolio 2 <i class="bi bi-arrow-up-right-square-fill"></i>
+            </li>
+            <!-- Fixed: Added closing </li> for Contact -->
+            <!-- Tambahan menu untuk menghubungkan ke Portofolio 2 -->
+            <li class="nav-item">
+              <a class="nav-link" href="index2.html" target="_blank">
+                Portofolio 2 <i class="bi bi-arrow-up-right-square-fill"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -48,14 +50,14 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center" id="welcome-section" style="background-color: #f0d6e6;">
-      <img src="../img/project/pict.jpeg" alt="Barby clariza" width="200" class="rounded-circle img-thumbnail" />
+    <!-- Fixed Image Path: removed ../ -->
+    <section class="jumbotron text-center" id="welcome-section" style="background-color: #f0d6e6; padding-top: 100px; padding-bottom: 50px;">
+      <img src="img/project/pict.jpeg" alt="Barby clariza" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4 text-white fw-bold">Barby clariza Okvinasya</h1>
-
       <p class="lead text-white">Pelajar</p>
       <a href="https://github.com/clarizavvvvvv" target="_blank" class="btn btn-dark btn-github" id="profile-link">Follow my GitHub <i class="bi bi-github"></i></a>
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffcece" fill-opacity="1" d="M0,192L0,96L72,96L72,224L144,224L144,64L216,64L216,128L288,128L288,32L360,32L360,192L432,192L432,288L504,288L504,192L576,192L576,320L648,320L648,224L720,224L720,160L792,160L792,0L864,0L864,64L936,64L936,128L1008,128L1008,64L1080,64L1080,288L1152,288L1152,224L1224,224L1224,256L1296,256L1296,160L1368,160L1368,320L1440,320L1440,320L1368,320L1368,320L1296,320L1296,320L1224,320L1224,320L1152,320L1152,320L1080,320L1080,320L1008,320L1008,320L936,320L936,320L864,320L864,320L792,320L792,320L720,320L720,320L648,320L648,320L576,320L576,320L504,320L504,320L432,320L432,320L360,320L360,320L288,320L288,320L216,320L216,320L144,320L144,320L72,320L72,320L0,320L0,320Z">
-     </path></svg>
+      <!-- SVG Wave -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Jumbotron -->
 
@@ -80,91 +82,84 @@
     </section>
   
     <!-- Projects -->
-    <section>
-<section id="projects" class="bg-light py-5">
-  <div class="container">
-    <div class="row text-center mb-4">
-      <div class="col">
-        <h2 class="fw-bold">My Projects</h2>
-        <p class="text-muted">Beberapa project yang pernah saya buat</p>
-      </div>
-    </div>
-
-    <div class="row g-4">
-      <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm project-card">
-          <img src="../img/project/translate.png" class="card-img-top" alt="Project Translate">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold">Kaggle Python Translator - 7 Januari 2026</h5>
-            <p class="card-text">
-              Program Python sederhana untuk menerjemahkan bahasa Inggris ke Bahasa Indonesia.
-            </p>
-            <a href=" https://clarizavvvvvv.github.io/kaggleclariza/" target="_blank" class="btn btn-outline-primary mt-auto">
-              Lihat Project <i class="bi bi-box-arrow-up-right"></i>
-            </a>
+    <!-- Fixed: Removed duplicate section tag and fixed nesting -->
+    <section id="projects" class="bg-light py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="fw-bold">My Projects</h2>
+            <p class="text-muted">Beberapa project yang pernah saya buat</p>
           </div>
         </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm project-card">
-          <img src="../img/project/gamedno.png" class="card-img-top" alt="Form Login">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold">Game dinosaurus - 30 Oktober 2025</h5>
-            <p class="card-text">
-             game construct 3 yang bertema dinosaurus
-            </p>
-            <a href="https://github.com/clarizavvvvvv" target="_blank" class="btn btn-outline-primary mt-auto">
-              Lihat Project <i class="bi bi-box-arrow-up-right"></i>
-            </a>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm project-card">
+              <!-- Fixed Image Path -->
+              <img src="img/project/translate.png" class="card-img-top" alt="Project Translate">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Kaggle Python Translator - 7 Januari 2026</h5>
+                <p class="card-text">Program Python sederhana untuk menerjemahkan bahasa Inggris ke Bahasa Indonesia.</p>
+                <a href="https://clarizavvvvvv.github.io/kaggleclariza/" target="_blank" class="btn btn-outline-primary mt-auto">
+                  Lihat Project <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm project-card">
-          <img src="../img/project/laravel.png" class="card-img-top" alt="Login PHP">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold">Laravel - 2 Desember 2025</h5>
-            <p class="card-text">
-             Laravel diatas bertema toko penyewaan baju
-            </p>
-            <a href="https://github.com/clarizavvvvvv" target="_blank" class="btn btn-outline-primary mt-auto">
-              Lihat Project <i class="bi bi-box-arrow-up-right"></i>
-            </a>
+          <!-- Project 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm project-card">
+              <!-- Fixed Image Path -->
+              <img src="img/project/gamedno.png" class="card-img-top" alt="Form Login">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Game dinosaurus - 30 Oktober 2025</h5>
+                <p class="card-text">game construct 3 yang bertema dinosaurus</p>
+                <a href="https://github.com/clarizavvvvvv" target="_blank" class="btn btn-outline-primary mt-auto">
+                  Lihat Project <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
- <div class="col-md-4">
-        <div class="card h-100 shadow-sm project-card">
-          <img src="../img/project/batik.png" class="card-img-top" alt="Login PHP">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold">Website Batik p5 - 7 Oktober 2025</h5>
-            <p class="card-text">
-             Tentang project p5 batik 
-            </p>
-            <a href="https://clarizavvvvvv.github.io/batik/" target="_blank" class="btn btn-outline-primary mt-auto">
-              Lihat Project <i class="bi bi-box-arrow-up-right"></i>
-            </a>
+          <!-- Project 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm project-card">
+              <!-- Fixed Image Path -->
+              <img src="img/project/laravel.png" class="card-img-top" alt="Login PHP">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Laravel - 2 Desember 2025</h5>
+                <p class="card-text">Laravel diatas bertema toko penyewaan baju</p>
+                <a href="https://github.com/clarizavvvvvv" target="_blank" class="btn btn-outline-primary mt-auto">
+                  Lihat Project <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Akhir Projects -->
 
- 
+          <!-- Project 4 (Fixed: Moved inside the row and col-md-4) -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm project-card">
+              <!-- Fixed Image Path -->
+              <img src="img/project/batik.png" class="card-img-top" alt="Login PHP">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Website Batik p5 - 7 Oktober 2025</h5>
+                <p class="card-text">Tentang project p5 batik</p>
+                <a href="https://github.com/clarizavvvvvv" target="_blank" class="btn btn-outline-primary mt-auto">
+                  Lihat Project <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </section>
+    <!-- Akhir Projects -->
 
     <!--Pendidikan-->
-     <section id="about">
+    <section id="pendidikan" style="background-color: #fff;">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -173,15 +168,13 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4">
-            <p>
-            saya bersekolah di SD NEGERI 1 TUMPANG selama 6 Tahun, saya berada di SMP NEGERI 2 TUMPANG selama 3 Tahun
-            sekarang saya melanjutkan di SMK NEGERI 5 MALANG
-            </p>
-          </div>
+            <p>saya bersekolah di SD NEGERI 1 TUMPANG selama 6 Tahun, saya berada di SMP NEGERI 2 TUMPANG selama 3 Tahun sekarang saya melanjutkan di SMK NEGERI 5 MALANG</p>
           </div>
         </div>
       </div>
-      <!--akhir pendidikan-->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffcece" fill-opacity="1" d="M0,192L0,96L72,96L72,224L144,224L144,64L216,64L216,128L288,128L288,32L360,32L360,192L432,192L432,288L504,288L504,192L576,192L576,320L648,320L648,224L720,224L720,160L792,160L792,0L864,0L864,64L936,64L936,128L1008,128L1008,64L1080,64L1080,288L1152,288L1152,224L1224,224L1224,256L1296,256L1296,160L1368,160L1368,320L1440,320L1440,320L1368,320L1368,320L1296,320L1296,320L1224,320L1224,320L1152,320L1152,320L1080,320L1080,320L1008,320L1008,320L936,320L936,320L864,320L864,320L792,320L792,320L720,320L720,320L648,320L648,320L576,320L576,320L504,320L504,320L432,320L432,320L360,320L360,320L288,320L288,320L216,320L216,320L144,320L144,320L72,320L72,320L0,320L0,320Z"></path></svg>
+    </section>
+    <!--akhir pendidikan-->
 
     <!-- Contact -->
     <section id="contact">
